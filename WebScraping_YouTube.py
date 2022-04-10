@@ -1,4 +1,4 @@
-# Imports
+# Imports:
 from selenium import webdriver
 import requests
 from selenium.webdriver.chrome.service import Service
@@ -47,12 +47,6 @@ xml = BeautifulSoup(open(xml_sm, encoding="utf8"), "lxml")
 xml_content = xml.prettify()
 print(xml_content)
 
-'''
-import xml.dom.minidom
-
-dom = xml.dom.minidom.parse(file='../sitemap.xml')
-pretty_xml_as_string = dom.toprettyxml()
-print(pretty_xml_as_string)'''
 
 # Tecnología usada:
 import builtwith
@@ -65,7 +59,6 @@ print(tech)
 import whois
 
 print(whois.whois(URL_principal))
-
 
 
 # Credentials:
@@ -104,7 +97,6 @@ sleep(2)
 next_button = driver.find_element_by_xpath("""//*[@id="passwordNext"]/div/button/span""")
 next_button.click()
 sleep(5)
-
 
 
 # Obtener los videos
