@@ -32,7 +32,7 @@ Los resultados se almacenan en un csv dentro de la carpeta Dataset con el nombre
 
 Esta fecha se generará automáticamente dependiendo del día de ejecución del código. 
 
-## Dataset publicado en Zenozo
+## Dataset publicado en Zenodo
 
 
 
