@@ -43,6 +43,14 @@ with open('./sitemap.xml', 'wb') as file:
 
 xml_sm = "./sitemap.xml"
 
+# Opción 1:
+with open('./sitemap.xml', 'rb') as file:
+    xml = file.read()
+    xml = BeautifulSoup(xml, "html.parser")
+    xml_p = xml.prettify()
+    print(xml_p)
+
+# Opción 2:
 xml = BeautifulSoup(open(xml_sm, encoding="utf8"), "lxml")
 xml_content = xml.prettify()
 print(xml_content)
